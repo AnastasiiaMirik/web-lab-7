@@ -1,0 +1,30 @@
+{% extends 'base.tmpl' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+	Задача5. Дано ціле число N (> 2). Сформувати і вивести цілочисельний масив
+розміру N, що містить N перших елементів послідовності чисел Фібоначчі FK:
+F1 = 1, F2 = 1, FK = FK-2 + FK-1, K = 3, 4, .... Вивести умову задачі, початкові
+значення та результуючі.
+	</h3>
+	<p> n = {{n}}</p>
+	<p>Масив: </p>
+	{% for value in arr %}
+	<li>
+	{{value }}
+	</li>
+	{% endfor %}
+</body>
+</html>
+
+
+{% endblock content %}
